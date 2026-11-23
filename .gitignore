@@ -32,3 +32,4 @@ local/bin/
 android/
 apps/
 *.apk
+.pytest_cache/

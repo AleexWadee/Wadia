@@ -1,5 +1,7 @@
 # 🎙️ Wadia: an offline voice assistant in Python
 
+[![Tests](https://github.com/AleexWadee/Wadia/actions/workflows/tests.yml/badge.svg)](https://github.com/AleexWadee/Wadia/actions/workflows/tests.yml)
+
 Wadia is a voice assistant like Siri or Alexa that runs **entirely on a laptop**. Speech recognition, the language model and the voice all run locally, with no account, no API key and no cost. Only web searches, the pages it reads and weather lookups go to the internet.
 
 You say "Hey Wadia, what's the weather?" and it starts answering **about two seconds after you stop talking**. It remembers past conversations, speaks English and Spanish, searches the web live, and has a phone app and a guest mode so other people can try it without seeing anything private.
@@ -129,6 +131,15 @@ Most settings are in the app. These can also be set in `Wadia.bat` or as environ
 | `LLM_MODEL` | `wadia` | Any Ollama model that supports tools. |
 | `WHISPER_MODEL` | `large-v3-turbo` | `small` is lighter and faster, but less accurate. |
 | `WHISPER_DEVICE` | `auto` | GPU if it works, CPU otherwise. Can be forced to `cuda` or `cpu`. |
+
+## Tests
+
+The [`tests/`](tests) folder checks the logic that doesn't need the models: the safe calculator (correct results, and rejecting code injection or huge exponents) and how the streamed answer is cut into sentences to speak. They run automatically on GitHub with every push, and locally with:
+
+```powershell
+pip install pytest
+pytest
+```
 
 ## Privacy
 
