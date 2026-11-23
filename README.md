@@ -9,8 +9,11 @@ You say "Hey Wadia, what's the weather?" and it starts answering **about two sec
 I built it in my free time. I first wanted to train my own model, but my laptop didn't have enough memory, so I switched to running an open model locally (Qwen via Ollama) and giving it tools: web search, page reading, weather, a calculator and long-term memory.
 
 <p align="center">
-  <img src="docs/wadia-window.png" alt="The Wadia laptop app: a glowing orb, the voice and memory controls, a microphone switch and a message box" width="320">
+  <img src="docs/wadia-conversation.png" alt="Wadia answering: it shows what you said and its reply under the glowing orb" width="250">
+  <img src="docs/wadia-voices.png" alt="The voice picker, with separate voices for English and Spanish" width="250">
+  <img src="docs/wadia-memory.png" alt="The memory screen, showing what Wadia knows about the user" width="250">
 </p>
+<p align="center"><sub>A conversation · choosing the voice · what Wadia remembers</sub></p>
 
 ## Highlights
 
