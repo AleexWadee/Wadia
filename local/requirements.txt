@@ -1,0 +1,17 @@
+faster-whisper>=1.2
+kokoro-onnx>=0.4
+ollama>=0.6
+sounddevice>=0.5
+numpy
+requests
+ddgs>=9
+# Speech recognition on an NVIDIA GPU (optional; falls back to CPU without them)
+nvidia-cublas-cu12
+nvidia-cudnn-cu12==9.*
+# Phone app
+aiohttp>=3.9
+cryptography>=42
+qrcode>=7
+# Laptop app (tray icon)
+pystray>=0.19
+pillow>=10

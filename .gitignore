@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Personal data (memories, settings, conversations, logs)
+local/memory.json
+local/settings.json
+local/history/
+*.log
+
+# Secrets and certificates
+.env
+local/certs/
+*.pem
+*.key
+*.crt
+*.jks
+keystore-password.txt
+
+# Large downloads: models, voices, tools
+local/voices/
+local/bin/
+*.onnx
+*.bin
+*.gguf
+*.pt
+*.exe
+
+# Android apps and SDK (contain my signing key)
+android/
+apps/
+*.apk
