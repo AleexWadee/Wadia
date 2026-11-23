@@ -8,6 +8,10 @@ You say "Hey Wadia, what's the weather?" and it starts answering **about two sec
 
 I built it in my free time. I first wanted to train my own model, but my laptop didn't have enough memory, so I switched to running an open model locally (Qwen via Ollama) and giving it tools: web search, page reading, weather, a calculator and long-term memory.
 
+<p align="center">
+  <img src="docs/wadia-window.png" alt="The Wadia laptop app: a glowing orb, the voice and memory controls, a microphone switch and a message box" width="320">
+</p>
+
 ## Highlights
 
 - **Fully local voice pipeline:** voice activity detection → speech-to-text on the GPU → local LLM with tool calling → text-to-speech on the CPU, fitting in 8 GB of GPU memory.
